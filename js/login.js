@@ -16,7 +16,7 @@ if (email === 'getMoney@gmail.com' && password === 'secret'){
     window.location.href = 'bank.html';
 }
 else{
-    alert('You Have to ENTER the specific Email & Password.')
+    alert('Wrong Email or Password.')
 }
 
 })
