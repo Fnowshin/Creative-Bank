@@ -7,6 +7,11 @@ const withdrawField = document.getElementById('withdraw-field');
 const newWithdrawAmountString = withdrawField.value;
 const newWithdrawAmount = parseFloat(newWithdrawAmountString);
 
+if(isNaN(newWithdrawAmount)){
+    alert('Please Provide a Number');
+    return;
+}
+
 // 3. Get previouse withdraw total
 const withdrawTotalElement = document.getElementById('withdraw-total');
 const previousWithdrawTotalString = withdrawTotalElement.innerText;
